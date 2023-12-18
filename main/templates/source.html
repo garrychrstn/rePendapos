@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}rePendapos{% endblock %}</title>
+        <link rel='stylesheet' type='text/css' href={% static 'source.css' %}>
+    </head>
+    <body>
+        <header class='flex container'>
+            <h1>Pendapos</h1>
+            <ul class='flex'>
+                <li><a href='insert'>insert data</a></li>
+                <li><a href='#'>sign out</a></li>
+            </ul>
+        </header>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+{% extends 'source.html' %}
+{% load static %}
+
+{% block title %} rePendapos | Title {% endblock %}
+
+{% block content %}
+    <div class='insert input'>
+        <form method='POST' action=''>
+            <h1>Masukan data Balita</h1>
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button type='submit' name='save'>submit</button>
+        </form>
+    </div>
+{% endblock %}
